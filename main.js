@@ -1,4 +1,6 @@
 const util = require("./myUtils.js");
 
-console.log(util.isPrime(2));
+const num1 = util.getPositiveNum();
+const num2 = util.getPositiveNum();
 
+util.printElements(util.getPrimeNumbers(num1, num2));
