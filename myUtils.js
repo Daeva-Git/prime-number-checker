@@ -22,7 +22,7 @@ module.exports = {
 	//Returns all prime numbers between two postive integers
 	getPrimeNumbers: function (num1, num2) {
 		let result = [];
-		for (let i = Math.min(num1, num2); i <= Math.max(num1, num2); i++) {
+		for (let i = Math.ceil(Math.min(num1, num2)); i <= Math.floor(Math.max(num1, num2)); i++) {
 			if (this.isPrime(i)) result.push(i);
 		}
 		return result;
